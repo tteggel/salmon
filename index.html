@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slaying the Salmon of Doubt</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/hp.css" id="theme">
+    <link rel="stylesheet" href="css/typography/typography.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>Slaying the Salmon of Doubt</h1>
+          <p>(...and introducing the lobster of uncertainty)</p>
+
+          <div class="middle">
+            <div>
+              <p>IRC: tteggel</p>
+              <p>Twitter: <a href="https://twitter.com/intent/user?user_id=37049955">@thomleg</a></p>
+              <p>Email: <a hef="mailto:thom@tteggel.org">thom@tteggel.org</a></p>
+            </div>
+          </div>
+
+       </section>
+
+       <section>
+         <h2>Introductions</h2>
+         <p>(...and some context)</p>
+
+         <div class="middle">
+           <ul>
+             <li class="fragment">12 people</li>
+             <li class="fragment">Product development team</li>
+             <li class="fragment">Blah</li>
+           </ul>
+         </div>
+
+         <aside class="notes">
+
+         </aside>
+
+         <footer>
+           <a href="https://www.flickr.com/photos/sidm/2157789184">Background photo</a> by
+           <a href="https://www.flickr.com/photos/sidm/">SidPix on Flickr</a>.
+           License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+         </footer>
+       </section>
+
+       <section>
+         <h2>Implicit Knowledge</h2>
+         <p>(...and an aside on the importance of documentation)</p>
+
+
+         <div class="middle">
+           <ul>
+             <li class="fragment"></li>
+             <li class="fragment"></li>
+             <li class="fragment"></li>
+           </ul>
+         </div>
+
+       </section>
+
+       <section>
+         <h2>Interrupt Driven Development</h2>
+         <p>(...and the emergence of a sentry)</p>
+
+         <div>
+           <div class="left">
+             <h3 class="fragment">Initially</h3>
+             <ul>
+               <li class="fragment">Engineers have multiple (&gt; 5) tasks on the go.</li>
+               <li class="fragment">QA is done out of cycle &ndash; lots of rework.</li>
+               <li class="fragment">Support work is handled by one individual.</li>
+               <li class="fragment">Dev/Test environments frequently down.</li>
+             </ul>
+           </div>
+           <div class="right">
+             <h3 class="fragment">Emerging</h3>
+             <ul>
+               <li class="fragment">Daily rotation of “Sentry Duty”.</li>
+               <li class="fragment">Takes all interruptions.</li>
+               <li class="fragment"></li>
+               <li class="fragment"></li>
+             </ul>
+           </div>
+         </div>
+
+         <aside class="notes">
+         </aside>
+       </section>
+
+       <section>
+         <div class="middle">
+           <div>
+             <blockquote>
+               “My goal for the next six months is to commit as much code upstream as I would have committed in an afternoon in my last job.”
+             </blockquote>
+           </div>
+         </div>
+       </section>
+
+       <section>
+       </section>
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+      width: 1920,
+      height: 1080,
+      controls: true,
+      progress: true,
+      history: true,
+      center: false,
+      transition: 'cube',
+      backgroundTransition: 'convex',
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/notes/notes.js' }
+      ]
+      });
+    </script>
+
+    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+
+    <style>
+      section {height: 100%;}
+      footer {position: absolute; width:100%; bottom: 0px;}
+      .middle > *, .left, .right {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+      div.left {transform: translate(-120%, -50%)}
+      div.right {transform: translate(20%, -50%)}
+    </style>
+
+  </body>
+</html>
