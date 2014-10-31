@@ -14,11 +14,16 @@
       <div class="slides">
 
         <section>
-          <h1>Slaying the Salmon of Doubt</h1>
-          <p>(...and introducing the lobster of uncertainty)</p>
-
           <div class="middle">
             <div>
+              <h1>Slaying the Salmon of Doubt</h1>
+              <p>(...and introducing the lobster of uncertainty)</p>
+              <p>&nbsp;</p>
+              <hr/>
+              <p>A story about how a team of enterprise developers worked their way upstream. Told first at OpenStack Paris 2014 on the How To Contribute track.</p>
+              <hr/>
+              <p>&nbsp;</p>
+              <h6>Thom Leggett</h6>
               <p>IRC: tteggel</p>
               <p>Twitter: <a href="https://twitter.com/intent/user?user_id=37049955">@thomleg</a></p>
               <p>Email: <a hef="mailto:thom@tteggel.org">thom@tteggel.org</a></p>
@@ -28,19 +33,28 @@
        </section>
 
        <section>
-         <h2>Introductions</h2>
-         <p>(...and some context)</p>
+         <div class="middle">
+           <div><blockquote>This story is based on actual events. In certain cases incidents, characters and timelines have been changed for dramatic purposes. Certain characters may be composites, or entirely fictitious.</blockquote></div>
+         </div>
+       </section>
+
+       <section>
+         <h1>Introductions</h1>
+         <p>(...and who is the Salmon of Doubt?)</p>
 
          <div class="middle">
-           <ul>
-             <li class="fragment">12 people</li>
-             <li class="fragment">Product development team</li>
-             <li class="fragment">Blah</li>
-           </ul>
+           <img src="salmon1.jpg" title="Atlantic salmon. Salmo salar."/>
          </div>
 
          <aside class="notes">
-
+           <ul>
+             <li>Compute service focus.</li>
+             <li>12 people. Which is big.</li>
+             <li><strong>Product engineering team.</strong> Not a pure upstream team. Has product development and support responsibilities.</li>
+             <li>HP Helion OpenStack, HP Helion Public Cloud, HP Helion OpenStack Community Edition.</li>
+             <li>2012 to present day.</li>
+             <li>The Salmon of Doubt is: that feeling that you won't be able to contribute upstream and don't know where to start; ...</li>
+           </ul>
          </aside>
 
          <footer>
@@ -51,16 +65,58 @@
        </section>
 
        <section>
-         <h2>Implicit Knowledge</h2>
-         <p>(...and an aside on the importance of documentation)</p>
-
+         <h1>The Fork</h1>
+         <p>(...and the knife.)
 
          <div class="middle">
+           <img src="fork.jpg" title="A dining fork." width="30%"/>
+         </div>
+
+         <aside class="notes">
            <ul>
-             <li class="fragment"></li>
-             <li class="fragment"></li>
-             <li class="fragment"></li>
+             <li>We forked openstack.</li>
+             <li>Diablo; enormous pressure to get something in the marketplace; no upstream people.</li>
+             <li>Grizzly: upstream was stable enough and we wanted to catch up. We couldn't.</li>
+             <li>New project to build grizzly based service; tooling to make keeping up with upstream possible; investment in upstream activity.</li>
+             <li>Don't do it.</li>
+             <li>It took us a further 9 months to get a service generally available to the public due.</li>
+             <li>Went live November 2013 and was regularly 1-2 weeks behind trunk for many services.</li>
            </ul>
+         </aside>
+       </section>
+
+       <section>
+         <h1>Silos</h1>
+         <p>(...and an aside on the importance of documentation.)</p>
+
+         <div class="left">
+           <p>There are <em>n=3</em> people on the team, Alice, Bob and Quentin. Quentin asks a question. There are 5 ways he can get an answer:
+           <ol>
+             <li><strong>Q</strong>: by finding it himself.</li>
+             <li><strong>AQ</strong>: by asking Alice who tells him immediately.</li>
+             <li><strong>BQ</strong>: by asking Bob who tells him immediately.</li>
+             <li><strong>BAQ</strong>: by asking Alice who has to ask Bob.</li>
+             <li><strong>ABQ</strong>: by asking Bob who has to ask Alice.</li>
+           </ol>
+         </div>
+
+         <div class="right">
+           <table class="fragment" data-fragment-index="0" >
+             <thead><tr><th>n</th><th>possible interactions</th></tr></thead>
+             <tbody>
+               <tr><td>2</td><td>2</td></tr>
+               <tr><td>3</td><td>5</td></tr>
+               <tr><td>4</td><td>16</td></tr>
+               <tr><td>5</td><td>65</td></tr>
+               <tr class="fragment" data-fragment-index="1"><td>6</td><td>326</td></tr>
+               <tr class="fragment" data-fragment-index="1" ><td>7</td><td>1957</td></tr>
+               <tr class="fragment" data-fragment-index="1" ><td>8</td><td>13 700</td></tr>
+               <tr class="fragment" data-fragment-index="1" ><td>9</td><td>109 601</td></tr>
+               <tr class="fragment" data-fragment-index="2" ><td>10</td><td>986 410</td></tr>
+               <tr class="fragment" data-fragment-index="2" ><td>11</td><td>9 864 101</td></tr>
+               <tr class="fragment" data-fragment-index="2" ><td>12</td><td>108 505 112</td></tr>
+             </tbody>
+           </table>
          </div>
 
        </section>
@@ -69,28 +125,24 @@
          <h2>Interrupt Driven Development</h2>
          <p>(...and the emergence of a sentry)</p>
 
-         <div>
-           <div class="left">
-             <h3 class="fragment">Initially</h3>
-             <ul>
-               <li class="fragment">Engineers have multiple (&gt; 5) tasks on the go.</li>
-               <li class="fragment">QA is done out of cycle &ndash; lots of rework.</li>
-               <li class="fragment">Support work is handled by one individual.</li>
-               <li class="fragment">Dev/Test environments frequently down.</li>
-             </ul>
-           </div>
-           <div class="right">
-             <h3 class="fragment">Emerging</h3>
-             <ul>
-               <li class="fragment">Daily rotation of “Sentry Duty”.</li>
-               <li class="fragment">Takes all interruptions.</li>
-               <li class="fragment"></li>
-               <li class="fragment"></li>
-             </ul>
-           </div>
+         <div class="middle">
+           <img src="salmon-sentry.jpg" width="45%"/>
          </div>
 
          <aside class="notes">
+           <h3>Initially</h3>
+           <ul>
+             <li>Engineers have multiple (&gt; 5) tasks on the go.</li>
+             <li>Support work is handled by one individual.</li>
+             <li>Dev/Test environments frequently down.</li>
+           </ul>
+           <h3>Emerging</h3>
+           <ul>
+             <li>Daily rotation of “Sentry Duty”.</li>
+             <li>Takes care of all interruptions.</li>
+             <li>Sentry looks after issues in production, triaging incoming bugs, issues with build tooling and dev/test environments.</li>
+             <li>If there's any time left over they will work in improvements, not main task.</li>
+           </ul>
          </aside>
        </section>
 
@@ -137,8 +189,10 @@
       section {height: 100%;}
       footer {position: absolute; width:100%; bottom: 0px;}
       .middle > *, .left, .right {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
-      div.left {transform: translate(-120%, -50%)}
-      div.right {transform: translate(20%, -50%)}
+      div.left {text-align:center; padding:0 25px 0 50px; transform: translate(-100%, -50%); width: 47%}
+      div.right {text-align:center; padding:0 50px 0 25px; transform: translate(0%, -50%); width: 47%}
+      .reveal table td, .reveal table th {text-align:right;}
+      .reveal table {margin: 0 auto;}
     </style>
 
   </body>
