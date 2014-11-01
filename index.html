@@ -37,7 +37,6 @@
           <div class="middle">
             <div>
               <h1>Slaying the Salmon of Doubt</h1>
-              <p>(...and introducing the lobster of uncertainty)</p>
               <p>&nbsp;</p>
               <hr/>
               <p>A story about how a team of enterprise developers worked their way upstream. Told first at OpenStack Paris 2014 on the How To Contribute track.</p>
@@ -47,8 +46,13 @@
               <p>IRC: tteggel</p>
               <p>Twitter: <a href="https://twitter.com/intent/user?user_id=37049955">@thomleg</a></p>
               <p>Email: <a hef="mailto:thom@tteggel.org">thom@tteggel.org</a></p>
+
             </div>
           </div>
+
+          <footer>
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/">This presentation licensed under CC-BY-SA <img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/></a>
+          </footer>
 
        </section>
 
@@ -59,25 +63,37 @@
        </section>
 
        <section>
-         <h1>Introductions</h1>
-         <p>(...and what is the Salmon of Doubt?)</p>
+         <section>
+           <h1>Introductions</h1>
 
-         <div class="middle">
-           <img src="salmon1.jpg" title="Atlantic salmon. Salmo salar."/>
-         </div>
+           <div class="middle">
+             <img src="salmon1.jpg" title="Atlantic salmon. Salmo salar."/>
+           </div>
+         </section>
 
-         <aside class="notes">
-           <ul>
-             <li>Compute service focus.</li>
-             <li>13 people. Which is big.</li>
-             <li><strong>Product engineering team.</strong></li>
-             <li>Not a pure upstream team.</li>
-             <li>Has product development and support responsibilities.</li>
-             <li>HP Helion OpenStack, HP Helion Public Cloud, HP Helion OpenStack Community Edition.</li>
-             <li>2012 to present day.</li>
-             <li>The Salmon of Doubt is: that feeling that you won't be able to contribute upstream and don't know where to start; ...</li>
-           </ul>
-         </aside>
+         <section class="middle">
+           <div>
+             <h1>Nova team</h1>
+             <p>(...actually <em>Compute Service</em> is our name.)</p>
+           </div>
+         </section>
+
+         <section class="middle">
+           <h1>13 people</h1>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Product engineering team</h1>
+             <p>(...in other words we have ops and support responsibilities too.)</p>
+           </div>
+
+           <aside class="notes">
+             <ul>
+               <li>HP Helion OpenStack, HP Helion Public Cloud, HP Helion OpenStack Community Edition.</li>
+             </ul>
+           </aside>
+         </section>
        </section>
 
        <section>
@@ -115,9 +131,8 @@
          <p>(...and the importance of knowledge management.)</p>
 
          <div class="left fragment" data-fragment-index="1">
-           <p>There are <em>n=3</em> people on the team, Alice, Bob and Quentin. Quentin asks a question. There are 5 ways he can get an answer:
+           <p>There are <em>n=3</em> people on the team, Alice, Bob and Quentin. Quentin asks a question. Someone on the team knows the answer. There are 4 ways he can find the information:
            <ol>
-             <li><strong>Q</strong>: by finding it himself.</li>
              <li><strong>AQ</strong>: by asking Alice who tells him immediately.</li>
              <li><strong>BQ</strong>: by asking Bob who tells him immediately.</li>
              <li><strong>BAQ</strong>: by asking Alice who has to ask Bob.</li>
@@ -129,25 +144,25 @@
            <table class="fragment" data-fragment-index="2" >
              <thead><tr><th>n</th><th>possible interactions</th></tr></thead>
              <tbody>
-               <tr><td>2</td><td>2</td></tr>
-               <tr><td>3</td><td>5</td></tr>
-               <tr><td>4</td><td>16</td></tr>
-               <tr><td>5</td><td>65</td></tr>
-               <tr class="fragment" data-fragment-index="3"><td>6</td><td>326</td></tr>
-               <tr class="fragment" data-fragment-index="3" ><td>7</td><td>1957</td></tr>
-               <tr class="fragment" data-fragment-index="3" ><td>8</td><td>13 700</td></tr>
-               <tr class="fragment" data-fragment-index="3" ><td>9</td><td>109 601</td></tr>
-               <tr class="fragment" data-fragment-index="4" ><td>10</td><td>986 410</td></tr>
-               <tr class="fragment" data-fragment-index="4" ><td>11</td><td>9 864 101</td></tr>
-               <tr class="fragment" data-fragment-index="4" ><td>12</td><td>108 505 112</td></tr>
-               <tr class="fragment" data-fragment-index="4" ><td>13</td><td>1 302 061 345</td></tr>
+               <tr><td>2</td><td>1</td></tr>
+               <tr><td>3</td><td>4</td></tr>
+               <tr><td>4</td><td>15</td></tr>
+               <tr><td>5</td><td>64</td></tr>
+               <tr class="fragment" data-fragment-index="3"><td>6</td><td>325</td></tr>
+               <tr class="fragment" data-fragment-index="3" ><td>7</td><td>1956</td></tr>
+               <tr class="fragment" data-fragment-index="3" ><td>8</td><td>13 699</td></tr>
+               <tr class="fragment" data-fragment-index="3" ><td>9</td><td>109 600</td></tr>
+               <tr class="fragment" data-fragment-index="4" ><td>10</td><td>986 409</td></tr>
+               <tr class="fragment" data-fragment-index="4" ><td>11</td><td>9 864 100</td></tr>
+               <tr class="fragment" data-fragment-index="4" ><td>12</td><td>108 505 111</td></tr>
+               <tr class="fragment" data-fragment-index="4" ><td>13</td><td>1 302 061 344</td></tr>
              </tbody>
            </table>
          </div>
 
          <aside class="notes">
            <ul>
-             <li></li>
+             <li>Dysfuncitonal team</li>
              <li><ul>
                  <li>13 people on team.</li>
                  <li>No formal knowledge management.</li>
@@ -167,61 +182,130 @@
        </section>
 
        <section>
-         <h1>The Fork</h1>
-         <p>(...and the knife.)
+         <section>
+           <h1>The Fork In The Road</h1>
+           <p>(...and finding our way back.)</p>
+           <div class="middle">
+             <img src="fork.jpg" width="30%"/>
+           </div>
+           <footer>
+             <a href="http://www.geograph.org.uk/photo/1005053">Photo</a> &copy;
+             <a href="http://www.geograph.org.uk/profile/1904">Richard Croft on geograph.org.uk</a>.
+             License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+           </footer>
+         </section>
 
-         <div class="middle">
-           <img src="fork.jpg" title="A dining fork." width="30%"/>
-         </div>
+         <section class="middle">
+           <div>
+             <h1>Early 2013</h1>
+           </div>
+         </section>
 
-         <aside class="notes">
-           <ul>
-             <li><ul>
-                 <li>Diablo</li>
-                 <li>Enormous pressure to get something in the marketplace.</li>
-                 <li>No upstream people.</li>
-             </ul></li>
-             <li>Grizzly: upstream was stable enough and we wanted to catch up. We couldn't.</li>
-             <li><ul>
-                 <li>New project to build grizzly based service.</li>
-                 <li>Tooling to make keeping up with upstream possible.
-                 <li>Investment in upstream activity.</li>
-             </ul></li>
-             <li>Don't do it.</li>
-             <li>It took us a further 9 months to get a service generally available to the public.</li>
-             <li>Went live November 2013 and was regularly 1-2 weeks behind trunk for many services.</li>
-           </ul>
-         </aside>
+         <section class="middle">
+           <div>
+             <h1>Our cloud was Diablo</h1>
+             <p>(...from September 2011 and 30K LoC proprietary patches.)</p>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>We wanted Grizzly</h1>
+             <p>(...and <strike>Quantum</strike> Neutron.)</p>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>0</h1>
+             <p>(...the number of upstream contributions that we had.)</p>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Bravo</h1>
+             <p>(...a new project to deploy a grizzly-cloud.)</p>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Time</h1>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Priority</h1>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Don't</h1>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1><strike>Don't</strike> Be careful</h1>
+           </div>
+         </section>
        </section>
 
-       <section data-background="salmon-upstream.jpg" class="white">
-         <h1>The River Mouth</h1>
-         <p>(...the journey upstream begins)</p>
+       <section data-background="river-mouth.jpg" class="white">
+         <section>
+           <div class="middle">
+             <div>
+               <h1>The River Mouth</h1>
+               <p>(...the journey upstream begins.)</p>
+             </div>
+           </div>
 
-         <aside class="notes">
-           <ul>
-             <li>Backtrack to GA of diablo service.</li>
-             <li><ul>
-                 <li>One or two people with upstream accounts.</li>
-                 <li>Almost 0 contributions.</li>
-                 <li>50K lines divergence from Diablo in nova alone.</li>
-             </ul></li>
-             <li>Language is powerful. Started to refer to divergence from upstream as technical debt.</li>
-             <li><ul>
-                 <li>Started with getting review count up. Informal target of one per day. Hands raised at standup if achieved yesterday.</li>
-                 <li>Used Diablo test suite to evaluate Grizzly/Havanna and target fixes./li>
-                 <li></li>
-             </ul></li>
-             <li></li>
-             <li></li>
-           </ul>
-         </aside>
+           <footer>
+             <a href="http://www.flickr.com/photos/47897534@N00/428443306/">Background photo</a> &copy;
+             <a href="http://www.flickr.com/people/47897534@N00">greenacre8 on flickr.com</a>.
+             License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+           </footer>
+         </section>
 
-         <footer>
-           <a href="http://commons.wikimedia.org/wiki/File:Salmon_swimming_upstream_in_Ketchikan_Creek_2.jpg">Background photo</a> &copy;
-           <a href="http://commons.wikimedia.org/wiki/User:Wknight94">Wknight94 on commons.wikimedia.org</a>.
-           License <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.
-         </footer>
+         <section class="middle">
+           <div>
+             <h1>Some practices</h1>
+           </div>
+           <aside class="notes">
+             <ul>
+               <li>IRC / mailing list sharing.</li>
+             </ul>
+           </aside>
+         </section>
+
+         <section class="middle">
+           <div>
+             <img src="hands-up.jpg"/>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <img src="doughnut.jpg"/>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Technical Debt</h1>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>git-upstream</h1>
+             <h6><a href="https://git.openstack.org/cgit/stackforge/git-upstream">https://git.openstack.org/cgit/stackforge/git-upstream</a></h6>
+             <p>(...some tooling for working with local patches in a gerrit workflow.)</p>
+           </div>
+         </section>
        </section>
 
        <section>
@@ -234,6 +318,118 @@
          </div>
        </section>
 
+       <section data-background="salmon-upstream.jpg" class="white">
+         <div class="middle">
+           <div>
+             <h1>Flow</h1>
+             <p>(...and integration.)
+           </div>
+         </div>
+
+         <aside class="notes">
+           <ul>
+             <li></li>
+             <li><ul>
+                 <li>Previous quote is not a bad thing. Indicates we're making progress.</li>
+                 <li>Writing code is hard. Writing code that works with other code is harder. Writing code that works with other code that is unknown to you, is changing fast and is owned by another team is hardest.</li>
+                 <li>Rigorous peer review is tough to take especially when you don't know the cultural norms of the group.</li>
+             </ul></li>
+             <li>Realisation that the code is improved by this process.</li>
+             <li><ul>
+                 <li>Persevere.</li>
+                 <li>Be disciplined and ruthless about accepting local patches.</li>
+                 <li>Measure and track. But don't target. Count reviews per person. Per patch: TTFR, TTFCR. Discuss good and bad patches and what could be done better.</li>
+             </ul></li>
+             <li>Integrated code &gt; code.</li>
+             <li>Patchset 44.</li>
+             <li>At least it's getting attention. Says as much about coordination, communication and cohesion within the core team as it does about the code under review. Review the learning gained by looking at the first patchset.</li>
+           </ul>
+         </aside>
+
+         <footer>
+           <a href="http://commons.wikimedia.org/wiki/File:Salmon_swimming_upstream_in_Ketchikan_Creek_2.jpg">Background photo</a> &copy;
+           <a href="http://commons.wikimedia.org/wiki/User:Wknight94">Wknight94 on commons.wikimedia.org</a>.
+           License <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.
+         </footer>
+
+       </section>
+
+       <section>
+         <h1>Dam</h1>
+         <p>(...n.)</p>
+         <div class="middle">
+           <img src="salmon-ladder.jpg"/>
+         </div>
+         <aside class="notes">
+           <ul>
+             <li>What do you do when you really can't get something accepted upstream?</li>
+             <li><ul>
+                 <li>At all?</li>
+                 <li>In a timely fashion?</li>
+                 <li></li>
+             </ul></li>
+             <li>Live migration of non-active states.</li>
+             <li><ul>
+                 <li>Clear policy. Disciplined and ruthless about what you'll accept.</li>
+                 <li>Consider: area of code impacted: is it moving quickly upstream? are there extension points you can use (or create)?</li>
+                 <li>Tooling: git-upstream.</li>
+             </ul></li>
+             <li>If you have to diverge do it thoughtfully.</li>
+             <li>Some patches have been carried for &gt; 1 year and have to rebase every month or so.</li>
+             <li>Made us more careful about what we commit to in a release so we're not under pressure to get something in quickly.</li>
+           </ul>
+         </aside>
+       </section>
+
+       <section data-background="salmon-waterfall.jpg">
+         <div class="middle">
+           <div>
+             <h1>Waterfalls</h1>
+             <p>(...and dealing with uncertainty.) </p>
+           </div>
+         </div>
+         <aside class="notes">
+           <ul>
+             <li>Most corporate processes are waterfall.</li>
+             <li><ul>
+                 <li>Even those that claim to be agile. Test sprint anyone?</li>
+                 <li>These processes don't deal very well with uncertainty.</li>
+                 <li>There's plenty of uncertainty about when something will land when you're working upstream.</li>
+             </ul></li>
+             <li>That doesn't mean we can't provide forecasts.</li>
+             <li><ul>
+                 <li>Gathered data about whole end-to-end process. From request to production deployment. Draw a cumulative flow diagram.</li>
+                 <li>Look at the distribution of the end-to-end times.</li>
+                 <li>Use MC simulation to make a forecast for your next release.</li>
+             </ul></li>
+             <li>Uncertainty at the patch level does not mean you can't forecast..</li>
+             <li>Just because you can forecast doesn't mean you'll be listened to :) Execs have trouble parsing confidence levels.</li>
+             <li>Language is powerful. Early, likely and latest dates is easier to understand.</li>
+           </ul>
+         </aside>
+       </section>
+
+       <section>
+         <aside class="notes">
+           <ul>
+             <li></li>
+             <li><ul>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+             </ul></li>
+             <li></li>
+             <li><ul>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+             </ul></li>
+             <li></li>
+             <li></li>
+             <li></li>
+           </ul>
+         </aside>
+       </section>
 
 
       </div>
@@ -266,7 +462,8 @@
 
     <style>
       section {height: 100%;}
-      footer {position: absolute; width:100%; bottom: 10px;}
+      .reveal section footer {position: absolute; width:100%; bottom: 10px; font-size:80%; vertical-align:middle;}
+      .reveal section footer img {margin:0}
       .middle > *, .left, .right {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
       div.left {text-align:center; padding:0 25px 0 50px; transform: translate(-100%, -50%); width: 47%}
       div.right {text-align:center; padding:0 50px 0 25px; transform: translate(0%, -50%); width: 47%}
