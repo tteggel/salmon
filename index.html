@@ -70,36 +70,12 @@
            <ul>
              <li>Compute service focus.</li>
              <li>13 people. Which is big.</li>
-             <li><strong>Product engineering team.</strong> Not a pure upstream team. Has product development and support responsibilities.</li>
+             <li><strong>Product engineering team.</strong></li>
+             <li>Not a pure upstream team.</li>
+             <li>Has product development and support responsibilities.</li>
              <li>HP Helion OpenStack, HP Helion Public Cloud, HP Helion OpenStack Community Edition.</li>
              <li>2012 to present day.</li>
              <li>The Salmon of Doubt is: that feeling that you won't be able to contribute upstream and don't know where to start; ...</li>
-           </ul>
-         </aside>
-
-         <footer>
-           <a href="https://www.flickr.com/photos/sidm/2157789184">Background photo</a> by
-           <a href="https://www.flickr.com/photos/sidm/">SidPix on Flickr</a>.
-           License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
-         </footer>
-       </section>
-
-       <section>
-         <h1>The Fork</h1>
-         <p>(...and the knife.)
-
-         <div class="middle">
-           <img src="fork.jpg" title="A dining fork." width="30%"/>
-         </div>
-
-         <aside class="notes">
-           <ul>
-             <li>Diablo; enormous pressure to get something in the marketplace; no upstream people.</li>
-             <li>Grizzly: upstream was stable enough and we wanted to catch up. We couldn't.</li>
-             <li>New project to build grizzly based service; tooling to make keeping up with upstream possible; investment in upstream activity.</li>
-             <li>Don't do it.</li>
-             <li>It took us a further 9 months to get a service generally available to the public due.</li>
-             <li>Went live November 2013 and was regularly 1-2 weeks behind trunk for many services.</li>
            </ul>
          </aside>
        </section>
@@ -114,10 +90,20 @@
 
          <aside class="notes">
            <ul>
-             <li>Engineers have multiple (&gt; 5) tasks on the go.; support work is handled by one individual; Dev/Test environments frequently down.</li>
+             <li><ul>
+                 <li>Engineers have multiple (&gt; 5) tasks on the go.</li>
+                 <li>Support work is handled by one individual</li>
+                 <li>Dev/Test environments frequently down.</li>
+             </ul></li>
              <li>Daily rotation of “Sentry Duty”.</li>
-             <li>Takes care of all interruptions walk-up/email/IM queries including issues in production, triaging incoming bugs, issues with build tooling and dev/test environments.; if there's any time left over they will work in improvements, not main task.</li>
-             <li>Do DevOps</li>
+             <li><ul>
+                 <li>Walk-up/email/IM queries.</li>
+                 <li>Issues in production.</li>
+                 <li>Triaging incoming bugs.</li>
+                 <li>Issues with build tooling and dev/test environments.</li>
+                 <li>If there's any time left over they will work in improvements, not main task.</li>
+             </ul></li>
+             <li>Do DevOps.</li>
              <li>People hate being on sentry duty.</li>
              <li>Folks start to see that they are learning about their system and their customers and stakeholders by taking part in this activity.</li>
            </ul>
@@ -162,14 +148,80 @@
          <aside class="notes">
            <ul>
              <li></li>
-             <li>13 people on team; no formal knowledge management; specialists.</li>
+             <li><ul>
+                 <li>13 people on team.</li>
+                 <li>No formal knowledge management.</li>
+                 <li>Specialists.</li>
+             </ul></li>
              <li>Bringing on new people was hard.</li>
-             <li>Effort to document; sharing and formalising personal scripts; walk-the-board stand-up.</li>
+             <li><ul>
+                 <li>Effort to document.</li>
+                 <li>Sharing and formalising personal scripts.</li>
+                 <li>Walk-the-board stand-up.</li>
+             </ul></li>
              <li>Big teams are bad.</li>
              <li>Still have problems with a large team. Slipping back to old behaviours under stress.</li>
              <li>Trialling sub-teams.</li>
            </ul>
          </aside>
+       </section>
+
+       <section>
+         <h1>The Fork</h1>
+         <p>(...and the knife.)
+
+         <div class="middle">
+           <img src="fork.jpg" title="A dining fork." width="30%"/>
+         </div>
+
+         <aside class="notes">
+           <ul>
+             <li><ul>
+                 <li>Diablo</li>
+                 <li>Enormous pressure to get something in the marketplace.</li>
+                 <li>No upstream people.</li>
+             </ul></li>
+             <li>Grizzly: upstream was stable enough and we wanted to catch up. We couldn't.</li>
+             <li><ul>
+                 <li>New project to build grizzly based service.</li>
+                 <li>Tooling to make keeping up with upstream possible.
+                 <li>Investment in upstream activity.</li>
+             </ul></li>
+             <li>Don't do it.</li>
+             <li>It took us a further 9 months to get a service generally available to the public.</li>
+             <li>Went live November 2013 and was regularly 1-2 weeks behind trunk for many services.</li>
+           </ul>
+         </aside>
+       </section>
+
+       <section data-background="salmon-upstream.jpg" class="white">
+         <h1>The River Mouth</h1>
+         <p>(...the journey upstream begins)</p>
+
+         <aside class="notes">
+           <ul>
+             <li>Backtrack to GA of diablo service.</li>
+             <li><ul>
+                 <li>One or two people with upstream accounts.</li>
+                 <li>Almost 0 contributions.</li>
+                 <li>50K lines divergence from Diablo in nova alone.</li>
+             </ul></li>
+             <li>Language is powerful. Started to refer to divergence from upstream as technical debt.</li>
+             <li><ul>
+                 <li>Started with getting review count up. Informal target of one per day. Hands raised at standup if achieved yesterday.</li>
+                 <li>Used Diablo test suite to evaluate Grizzly/Havanna and target fixes./li>
+                 <li></li>
+             </ul></li>
+             <li></li>
+             <li></li>
+           </ul>
+         </aside>
+
+         <footer>
+           <a href="http://commons.wikimedia.org/wiki/File:Salmon_swimming_upstream_in_Ketchikan_Creek_2.jpg">Background photo</a> &copy;
+           <a href="http://commons.wikimedia.org/wiki/User:Wknight94">Wknight94 on commons.wikimedia.org</a>.
+           License <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.
+         </footer>
        </section>
 
        <section>
@@ -182,10 +234,11 @@
          </div>
        </section>
 
-       <section>
-       </section>
+
 
       </div>
+      <img class="helion" src="helion.png"/>
+      <img class="hp" src="hp.png"/>
     </div>
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
@@ -193,12 +246,12 @@
       Reveal.initialize({
       width: 1920,
       height: 1080,
-      controls: true,
+      controls: false,
       progress: true,
       history: true,
       center: false,
       transition: 'cube',
-      backgroundTransition: 'convex',
+      backgroundTransition: 'concave',
       dependencies: [
       { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
       { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -213,13 +266,16 @@
 
     <style>
       section {height: 100%;}
-      footer {position: absolute; width:100%; bottom: 0px;}
+      footer {position: absolute; width:100%; bottom: 10px;}
       .middle > *, .left, .right {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
       div.left {text-align:center; padding:0 25px 0 50px; transform: translate(-100%, -50%); width: 47%}
       div.right {text-align:center; padding:0 50px 0 25px; transform: translate(0%, -50%); width: 47%}
       .reveal table td, .reveal table th {text-align:right;}
       .reveal table {margin: 0 auto;}
       .reveal.cube .slides section {padding: 60px;}
+      .helion, .hp {height: 7%; float: right;}
+      .reveal img.hp {position:absolute; padding: 0 5px 5px 0; bottom: 0%; right: 0%;}
+      .reveal section.white, .reveal section.white h1 {color:white;}
     </style>
 
   </body>
