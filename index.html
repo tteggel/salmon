@@ -262,12 +262,6 @@
                <p>(...the journey upstream begins.)</p>
              </div>
            </div>
-
-           <footer>
-             <a href="http://www.flickr.com/photos/47897534@N00/428443306/">Background photo</a> &copy;
-             <a href="http://www.flickr.com/people/47897534@N00">greenacre8 on flickr.com</a>.
-             License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
-           </footer>
          </section>
 
          <section class="middle">
@@ -306,6 +300,12 @@
              <p>(...some tooling for working with local patches in a gerrit workflow.)</p>
            </div>
          </section>
+
+         <footer>
+           <a href="http://www.flickr.com/photos/47897534@N00/428443306/">Background photo</a> &copy;
+           <a href="http://www.flickr.com/people/47897534@N00">greenacre8 on flickr.com</a>.
+           License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+         </footer>
        </section>
 
        <section>
@@ -316,50 +316,94 @@
              </blockquote>
            </div>
          </div>
+         <aside class="notes">
+           Not a bad thing. We're making progress in the right direction.
+         </aside>
        </section>
 
        <section data-background="salmon-upstream.jpg" class="white">
-         <div class="middle">
-           <div>
-             <h1>Flow</h1>
-             <p>(...and integration.)
+         <section>
+           <div class="middle">
+             <div>
+               <h1>Flow</h1>
+               <p>(...and integration.)
+             </div>
            </div>
-         </div>
+         </section>
 
-         <aside class="notes">
-           <ul>
-             <li></li>
-             <li><ul>
-                 <li>Previous quote is not a bad thing. Indicates we're making progress.</li>
-                 <li>Writing code is hard. Writing code that works with other code is harder. Writing code that works with other code that is unknown to you, is changing fast and is owned by another team is hardest.</li>
-                 <li>Rigorous peer review is tough to take especially when you don't know the cultural norms of the group.</li>
-             </ul></li>
-             <li>Realisation that the code is improved by this process.</li>
-             <li><ul>
-                 <li>Persevere.</li>
-                 <li>Be disciplined and ruthless about accepting local patches.</li>
-                 <li>Measure and track. But don't target. Count reviews per person. Per patch: TTFR, TTFCR. Discuss good and bad patches and what could be done better.</li>
-             </ul></li>
-             <li>Integrated code &gt; code.</li>
-             <li>Patchset 44.</li>
-             <li>At least it's getting attention. Says as much about coordination, communication and cohesion within the core team as it does about the code under review. Review the learning gained by looking at the first patchset.</li>
-           </ul>
-         </aside>
+         <section class="middle">
+           <div>
+             <h1>Hard:</h1>
+             <h3>Writing code that works.</h3>
+             <h1 class="fragment">Harder:</h1>
+             <h3 class="fragment">Writing code that works with other code that already works.</h3>
+             <h1 class="fragment">Hardest:</h1>
+             <h3 class="fragment">Writing code that works with other code that already works and that is unknown to you, is changing fast and is owned by another team.</h3>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Really Really Hard:</h1>
+             <h3>Peer review.</h3>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>But we're getting better</h1>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Measure and Track</h1>
+             <p>(...but please don't target.)</p>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Patchset 44</h1>
+           </div>
+           <aside class="notes">
+             <ul>
+               <li>At least it's getting attention.</li>
+               <li>Says as much about coordination, communication and cohesion within the core team as it does about the code under review.</li>
+               <li>Review the learning gained by looking at the first patchset.</li>
+             </ul>
+           </aside>
+         </section>
 
          <footer>
            <a href="http://commons.wikimedia.org/wiki/File:Salmon_swimming_upstream_in_Ketchikan_Creek_2.jpg">Background photo</a> &copy;
            <a href="http://commons.wikimedia.org/wiki/User:Wknight94">Wknight94 on commons.wikimedia.org</a>.
            License <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.
          </footer>
-
        </section>
 
        <section>
-         <h1>Dam</h1>
-         <p>(...n.)</p>
-         <div class="middle">
-           <img src="salmon-ladder.jpg"/>
-         </div>
+         <section>
+           <h1>Dam</h1>
+           <p>(...n.)</p>
+           <div class="middle">
+             <img src="salmon-ladder.jpg"/>
+           </div>
+         </section>
+
+         <section class="middle">
+           <div>
+             <h1>Local Patches</h1>
+             <h3>(...if we must)</h3>
+           </div>
+           <aside class="notes">
+             <ul>
+               <li>Disciplined and ruthless.</li>
+               <li>nova-specs based process.</li>
+               <li>Template that forced you to think about ongoing maintenance burden of a local patch.</li>
+           </aside>
+         </section>
+
          <aside class="notes">
            <ul>
              <li>What do you do when you really can't get something accepted upstream?</li>
@@ -472,7 +516,10 @@
       .reveal.cube .slides section {padding: 60px;}
       .helion, .hp {height: 7%; float: right;}
       .reveal img.hp {position:absolute; padding: 0 5px 5px 0; bottom: 0%; right: 0%;}
-      .reveal section.white, .reveal section.white h1 {color:white;}
+      .reveal section.white,
+      .reveal section.white h1,
+      .reveal section.white h2,
+      .reveal section.white h3 {color:white;}
     </style>
 
   </body>
