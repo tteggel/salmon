@@ -40,7 +40,6 @@
               <hr/>
               <p>A story about how a team of enterprise developers worked their way upstream. Told first at OpenStack&reg; Paris 2014 on the How To Contribute track.</p>
               <hr/>
-              <p>&nbsp;</p>
               <p>Thom Leggett &mdash; IRC:&nbsp;tteggel Twitter:&nbsp;<a href="https://twitter.com/intent/user?user_id=37049955">@thomleg</a> Email:&nbsp;<a hef="mailto:thom@tteggel.org">thom@tteggel.org</a></p>
 
             </div>
@@ -58,14 +57,9 @@
          <footer>The OpenStack word mark and the Square O Design, together or apart, are trademarks of the OpenStack Foundation in the United States and other countries, and are used with the OpenStack Foundation's permission.</footer>
        </section>
 
-       <section>
-         <section data-background="salmon-farm.jpg">
+       <section data-background="salmon-farm.jpg" class="bgwhite">
+         <section class="middle">
            <h1>Introductions</h1>
-           <footer>
-             <a href="https://www.flickr.com/photos/sbeebe/3390975266">Background photo</a> &copy;
-             <a href="https://www.flickr.com/photos/sbeebe/">sbeebe on flickr.com</a>.
-             License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
-           </footer>
          </section>
 
          <section class="middle">
@@ -91,6 +85,11 @@
              </ul>
            </aside>
          </section>
+         <footer>
+           <a href="https://www.flickr.com/photos/sbeebe/3390975266">Background photo</a> &copy;
+           <a href="https://www.flickr.com/photos/sbeebe/">sbeebe on flickr.com</a>.
+           License <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+         </footer>
        </section>
 
        <section>
@@ -178,18 +177,12 @@
          </aside>
        </section>
 
-       <section>
-         <section>
-           <h1>The Fork In The River</h1>
-           <p>(...and finding our way back.)</p>
-           <div class="middle">
-             <img src="fork.jpg"/>
+       <section data-background="fork.jpg" class="white bgblack">
+         <section class="middle">
+           <div>
+             <h1>The Fork In The River</h1>
+             <p>(...and finding our way back.)</p>
            </div>
-           <footer>
-             <a href="http://commons.wikimedia.org/wiki/File:Karnali_river.JPG">Photo</a> &copy;
-             <a href="http://commons.wikimedia.org/wiki/User:Sherparinji">Sherparinji on commons.wikimedia.org</a>.
-             License <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.
-           </footer>
          </section>
 
          <section class="middle">
@@ -249,6 +242,12 @@
              <h1><strike>Don't</strike> Be careful</h1>
            </div>
          </section>
+
+         <footer>
+           <a href="http://commons.wikimedia.org/wiki/File:Karnali_river.JPG">Background photo</a> &copy;
+           <a href="http://commons.wikimedia.org/wiki/User:Sherparinji">Sherparinji on commons.wikimedia.org</a>.
+           License <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a>.
+         </footer>
        </section>
 
        <section data-background="river-mouth.jpg" class="white">
@@ -321,7 +320,7 @@
          </aside>
        </section>
 
-       <section data-background="salmon-upstream.jpg">
+       <section data-background="salmon-upstream.jpg" class="bgwhite">
          <section>
            <div class="middle">
              <div>
@@ -409,7 +408,7 @@
          </section>
        </section>
 
-       <section data-background="salmon-waterfall.jpg">
+       <section data-background="salmon-waterfall.jpg" class="bgwhite">
          <div class="middle">
            <div>
              <h1>Waterfalls</h1>
@@ -514,7 +513,23 @@
       .reveal section.white h4,
       .reveal section.white h5,
       .reveal section.white h6 {color:white;}
-      .reveal p, .reveal blockquote {font-size:150%}
+      .reveal section.bgblack,
+      .reveal section.bgblack h1,
+      .reveal section.bgblack h2,
+      .reveal section.bgblack h3,
+      .reveal section.bgblack h4,
+      .reveal section.bgblack h5,
+      .reveal section.bgblack h6,
+      .reveal section.bgblack p {background-color: black}
+      .reveal section.bgblack,
+      .reveal section.bgwhite h1,
+      .reveal section.bgwhite h2,
+      .reveal section.bgwhite h3,
+      .reveal section.bgwhite h4,
+      .reveal section.bgwhite h5,
+      .reveal section.bgwhite h6,
+      .reveal section.bgwhite p {background-color: white}
+      .reveal p, .reveal blockquote {font-size:150%;}
     </style>
 
   </body>
