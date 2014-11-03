@@ -409,31 +409,39 @@
        </section>
 
        <section data-background="salmon-waterfall.jpg" class="bgwhite">
-         <div class="middle">
-           <div>
-             <h1>Waterfalls</h1>
-             <p>(...and dealing with uncertainty.) </p>
+         <section>
+           <div class="middle">
+             <div>
+               <h1>Waterfalls</h1>
+               <p>(...and dealing with uncertainty.)</p>
+             </div>
            </div>
-         </div>
-         <aside class="notes">
-           <ul>
-             <li>Most corporate processes are waterfall.</li>
-             <li><ul>
-                 <li>Even those that claim to be agile. QA sprint anyone?</li>
-                 <li>These processes don't deal very well with uncertainty.</li>
-                 <li>There's plenty of uncertainty about when something will land when you're working upstream.</li>
-             </ul></li>
-             <li>That doesn't mean we can't provide forecasts.</li>
-             <li><ul>
-                 <li>Gathered data about whole end-to-end process. From request to production deployment. Draw a cumulative flow diagram.</li>
-                 <li>Look at the distribution of the end-to-end times.</li>
-                 <li>Use MC simulation to make a forecast for your next release.</li>
-             </ul></li>
-             <li>Uncertainty at the patch level does not mean you can't forecast..</li>
-             <li>Just because you can forecast doesn't mean you'll be listened to :) Execs have trouble parsing confidence levels.</li>
-             <li>Language is powerful. Early, likely and latest dates is easier to understand.</li>
-           </ul>
-         </aside>
+           <aside class="notes">
+             <ul>
+               <li>Most corporate processes are waterfall.</li>
+               <li><ul>
+                   <li>Even those that claim to be agile. QA sprint anyone?</li>
+                   <li>These processes don't deal very well with uncertainty.</li>
+                   <li>There's plenty of uncertainty about when something will land when you're working upstream.</li>
+               </ul></li>
+               <li>That doesn't mean we can't provide forecasts.</li>
+               <li><ul>
+                   <li>Gathered data about whole end-to-end process. From request to production deployment. Draw a cumulative flow diagram.</li>
+                   <li>Look at the distribution of the end-to-end times.</li>
+                   <li>Use MC simulation to make a forecast for your next release.</li>
+               </ul></li>
+               <li>Uncertainty at the patch level does not mean you can't forecast..</li>
+               <li>Just because you can forecast doesn't mean you'll be listened to :) Execs have trouble parsing confidence levels.</li>
+               <li>Language is powerful. Early, likely and latest dates is easier to understand.</li>
+             </ul>
+           </aside>
+         </section>
+         <section>
+           <h1>Cumulative Flow Diagram</h1>
+           <div class="middle">
+             <img src="zuul.png"/>
+           </div>
+         </section>
        </section>
 
        <section>
@@ -531,6 +539,5 @@
       .reveal section.bgwhite p {background-color: white}
       .reveal p, .reveal blockquote {font-size:150%;}
     </style>
-
   </body>
 </html>
